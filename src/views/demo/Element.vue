@@ -8,8 +8,13 @@
 </template>
 
 <script>
+import { Button, Input } from "element-ui";
 export default {
   name: "Element",
+  components: {
+    [Button.name]: Button,
+    [Input.name]: Input,
+  },
   methods: {},
 };
 </script>
