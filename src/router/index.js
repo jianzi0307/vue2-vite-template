@@ -10,12 +10,29 @@ const routes = [
   {
     path: "/",
     name: "Index",
-    component: () => import("@/views/Index.vue"),
+    component: () => import("../views/Index.vue"),
   },
   {
-    path: "/login",
-    name: "Login",
-    component: () => import("@/views/Login.vue"),
+    path: "/demo",
+    name: "Demo",
+    component: () => import("../views/demo/index.vue"),
+    children: [
+      {
+        path: "/demo/timer",
+        name: "Demo.Timer",
+        component: () => import("../views/demo/Timer.vue"),
+      },
+      {
+        path: "storage",
+        name: "Demo.Storage",
+        component: () => import("../views/demo/Storage.vue"),
+      },
+      {
+        path: "net",
+        name: "Demo.Net",
+        component: () => import("../views/demo/Net.vue"),
+      },
+    ],
   },
 ];
 
