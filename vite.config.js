@@ -18,23 +18,34 @@ export default ({ command, mode }) => {
   }
 
   return defineConfig({
-    plugins: [createVuePlugin(), ...plugins],
+    root: process.cwd(),
+    base: env.VITE_BASE_URL,
+    define: {
+      "process.env": {},
+    },
+    build: {
+      outDir: env.VITE_OUTPUT_DIR,
+      assetsDir: "assets",
+      assetsInlineLimit: 4096,
+      cssCodeSplit: true,
+      sourcemap: false,
+      chunkSizeWarningLimit: 500,
+    },
     server: {
       host: env.VITE_HOST,
       port: env.VITE_PORT,
       open: true,
       https: false,
       ssr: false,
-      base: env.VITE_BASE_URL,
-      outDir: env.VITE_OUTPUT_DIR,
-      define: {
-        "process.env": {},
-      },
+      cors: true,
+      hmr: true,
+      proxy: {},
     },
     resolve: {
       alias: {
         "@": "/src",
       },
     },
+    plugins: [createVuePlugin(), ...plugins],
   });
 };
