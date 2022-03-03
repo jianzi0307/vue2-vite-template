@@ -32,6 +32,11 @@ const routes = [
         name: "Demo.Net",
         component: () => import("../views/demo/Net.vue"),
       },
+      {
+        path: "element",
+        name: "Demo.Element",
+        component: () => import("../views/demo/Element.vue"),
+      },
     ],
   },
 ];
