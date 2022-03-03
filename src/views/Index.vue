@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hi</h1>
+    <h1>Demo</h1>
 
     <ul>
       <li><router-link to="/demo/timer">TimerManager</router-link></li>
