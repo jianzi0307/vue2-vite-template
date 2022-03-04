@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@alanojs/net': ^0.0.9
+  '@alanojs/net': ^0.0.10
   '@alanojs/storage': ^0.0.5
   '@alanojs/timer': ^0.0.4
   '@alanojs/tools': ^0.0.10
@@ -16,7 +16,7 @@ specifiers:
   vue-template-compiler: ^2.6.14
 
 dependencies:
-  '@alanojs/net': registry.npmmirror.com/@alanojs/net/0.0.9
+  '@alanojs/net': registry.npmmirror.com/@alanojs/net/0.0.10
   '@alanojs/storage': registry.npmmirror.com/@alanojs/storage/0.0.5
   '@alanojs/timer': registry.npmmirror.com/@alanojs/timer/0.0.4
   '@alanojs/tools': registry.npmmirror.com/@alanojs/tools/0.0.10
@@ -34,25 +34,17 @@ devDependencies:
 
 packages:
 
-  registry.npmmirror.com/@alanojs/net/0.0.9:
-    resolution: {integrity: sha512-OxEJ5cr9Ja31MMfGWdoDOVu1mM2eKjf6hXnyA8NFUNwrMtxwj5UVX9jnFORv8EgJGOtW01vYoZZI1lFnfXgWzA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@alanojs/net/-/net-0.0.9.tgz}
+  registry.npmmirror.com/@alanojs/net/0.0.10:
+    resolution: {integrity: sha512-DnB1fT0HJ/KmtJ2PiKFWpx0389ecIs8tOPNZ1Rv5jdLTMBM1WKlMm3Af1vTqbIoZ/mIDv39bNfSLhi8orTxDJA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@alanojs/net/-/net-0.0.10.tgz}
     name: '@alanojs/net'
-    version: 0.0.9
+    version: 0.0.10
     dependencies:
-      '@alanojs/storage': registry.npmmirror.com/@alanojs/storage/0.0.4
+      '@alanojs/storage': registry.npmmirror.com/@alanojs/storage/0.0.5
       '@alanojs/tools': registry.npmmirror.com/@alanojs/tools/0.0.10
       axios: registry.npmmirror.com/axios/0.26.0
       qs: registry.npmmirror.com/qs/6.10.3
     transitivePeerDependencies:
       - debug
-    dev: false
-
-  registry.npmmirror.com/@alanojs/storage/0.0.4:
-    resolution: {integrity: sha512-3EWpRKGdf7JLZ7wdRYXk2KlJRYl/akA2tY28LHaV2r57Q1CwrhsPfOcp8wCw8C0dLJ7J8z/oPgAO3zliFSfASg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@alanojs/storage/-/storage-0.0.4.tgz}
-    name: '@alanojs/storage'
-    version: 0.0.4
-    dependencies:
-      '@alanojs/tools': registry.npmmirror.com/@alanojs/tools/0.0.8
     dev: false
 
   registry.npmmirror.com/@alanojs/storage/0.0.5:
@@ -75,15 +67,6 @@ packages:
     resolution: {integrity: sha512-Sjo0RnN7zZbrjafginJAq0sOlAxBpYoARnwIOaoCDMcHRlFBc7U4a8ajolGEuIkg2oX9bi6Ad2UmQicHnUg+nw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@alanojs/tools/-/tools-0.0.10.tgz}
     name: '@alanojs/tools'
     version: 0.0.10
-    dependencies:
-      exif-js: registry.npmmirror.com/exif-js/2.3.0
-      uuid: registry.npmmirror.com/uuid/8.3.2
-    dev: false
-
-  registry.npmmirror.com/@alanojs/tools/0.0.8:
-    resolution: {integrity: sha512-DJ81DyIBgBBJNtMYLYJmbahiq7Bf+jmRuSDiglOJWTJ4Tq7MU9G8jo7HGMLIrMGhr3oqH3CQEqGeeT/jO2SoUg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@alanojs/tools/-/tools-0.0.8.tgz}
-    name: '@alanojs/tools'
-    version: 0.0.8
     dependencies:
       exif-js: registry.npmmirror.com/exif-js/2.3.0
       uuid: registry.npmmirror.com/uuid/8.3.2
